@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.15.0/font/bootstrap-icons.css" rel="stylesheet"> <!-- Bootstrap Icons CSS -->
+    <style>
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        .fade-in {
+            opacity: 0;
+            animation: fade-in 0.5s ease-in-out;
+            animation-fill-mode: forwards; /* Keeps the final state of the animation */
+        }
+
+        body {
+            background-color: #2E3440; /* Background color */
+            color: #ECEFF4; /* Text color */
+        }
+
+        a{
+            font-weight: 600;
+            color: #81A1C1;
+        }
+
+        .nav-pills .nav-link{
+            color: #5e81ac;
+        }
+
+        .nav-pills .nav-link.active{
+            background-color: #88c0d0;
+        }
+        
+        .nav-pills .nav-link{
+            color: #5e81ac;
+        }
+
+        .nav-pills .nav-link.active{
+            background-color: #88c0d0;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="./index.html" class="nav-link " aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="./academia.html" class="nav-link active">Academia</a></li>
+          <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+        </ul>
+      </header>
+
+    <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom fade-in">Academia</h2>
+
+        <div class="row-cols-1">
+            <div class="col d-flex align-items-start fade-in">
+                <h7> • Deans List Scholar 2020-2021 <br> • University of Toronto Entrance Scholarship</h7>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <!-- First row of cards -->
+            <div class="col d-flex align-items-start fade-in">
+                
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/csca48h3">CSCA08/48</a></h3>
+                    <p>Intro to Computer Science I and II</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/mata37h3">MATA31/37</a></h3>
+                    <p>Calculus I and II</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/csca67h3">CSCA67</a></h3>
+                    <p>Discrete Mathematics</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/mata22h3">MATA22</a></h3>
+                    <p>Linear Algebra I</p>
+                </div>
+            </div>
+
+            <!-- Second row of cards (similar structure) -->
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/matb41h3">MATB41</a></h3>
+                    <p>Calculus III</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/matb24h3">MATB24</a></h3>
+                    <p>Linear Algebra II</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/stab52h3">STAB52</a></h3>
+                    <p>Intro to Probability</p>
+                </div>
+            </div>
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscb07h3">CSCB07</a></h3>
+                    <p>Intro to Software Design</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscb58h3">CSCB58</a></h3>
+                    <p>Computer Architecture</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscb09h3">CSCB09</a></h3>
+                    <p>Systems Programming</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/csc263h1">CSC263</a></h3>
+                    <p>Intro to Data Structuces</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscc01h3">CSCC01</a></h3>
+                    <p>Intro to Software Engineering</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscc63h3">CSCC63</a></h3>
+                    <p>Computational Complexity</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscc37h3">CSCC37</a></h3>
+                    <p>Numerical Algorithms for Computational Mathmatics</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscc10h3">CSCC10</a></h3>
+                    <p>Human Computer Interaction</p>
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start fade-in">
+            
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis"><a href="https://utsc.calendar.utoronto.ca/course/cscd01h3">CSCD01</a></h3>
+                    <p>Engineering in Large Systems</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

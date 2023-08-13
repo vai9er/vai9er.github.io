@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #2E3440;
+        }
+
+        svg {
+            background-color: white;
+        }
+
+        p {
+            color: #81A1C1;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        /* Add a class for fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease, transform 1s ease;
+        }
+
+        .fade-in.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .nav-pills .nav-link{
+            color: #5e81ac;
+        }
+
+        .nav-pills .nav-link.active{
+            background-color: #88c0d0;
+        }
+    </style>
+</head>
+<body>
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="./index.html" class="nav-link " aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="./academia.html" class="nav-link">Academia</a></li>
+            <li class="nav-item"><a href="./projects.html" class="nav-link active">Projects</a></li>
+        </ul>
+    </header>
+
+    <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Projects</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col fade-in">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="./pics/Picture1.png" width="40em" height="40em" alt="Foo Icon">
+                </div>
+                <h3 style="color: #8fbcbb;">BookMeBot API</h3>
+                <p>Developed a booking automation API using Selenium and Python for a chat bot that allows users to quickly
+                    book multiple gym times in advance (via Discord and Facebook Messenger) without authentication or web
+                    navigation</p>
+            </div>
+
+            <div class="feature col fade-in">
+                <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+                    <img src="./pics/dechess.png" width="40em" height="40em" alt="Foo Icon">
+                </div>
+                <h3 style="color: #8fbcbb;">DeChess</h3>
+                <p>Co-developed a P2P chess platform with NFT pieces and chat system using React and js-waku which won over
+                    $6000 from 5 sponsors</p>
+            </div>
+
+            <!-- Repeat the above structure for other project features -->
+            <div class="feature col fade-in">
+    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+        <img src="./pics/promedioo.png" width="40em" height="40em" alt="Foo Icon">
+    </div>
+    <h3 style="color: #8fbcbb;">Promedio</h3>
+    <p>Built a website with MERN stack to help 400+ students track their cGPA and reduced academic calculation time
+        from 4 minutes to 2 seconds</p>
+</div>
+
+<div class="feature col fade-in">
+    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+        <img src="./pics/tux.png" width="40em" height="40em" alt="Foo Icon">
+    </div>
+    <h3 style="color: #8fbcbb;">System Monitoring Tool</h3>
+    <p>Developed a C program to report various metrics of system utilization on Linux-based operating systems, including
+        user and system usage</p>
+</div>
+
+<div class="feature col fade-in">
+    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+        <img src="./pics/calender.png" width="40em" height="40em" alt="Foo Icon">
+    </div>
+    <h3 style="color: #8fbcbb;">Medical Scheduling App</h3>
+    <p>Designed a medical scheduling app using Java, Firebase, and Android Studio where patients can filter through doctors and
+        schedule appointments, and doctors can track their patients and specify their availabilities for patients to book</p>
+</div>
+
+<div class="feature col fade-in">
+    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
+        <img src="./pics/joystick.png" width="40em" height="40em" alt="Foo Icon">
+    </div>
+    <h3 style="color: #8fbcbb;">Traffic Racer</h3>
+    <p>Utilized MIPS assembly language and MARS software to successfully develop a 2D rendition of the popular Traffic
+        Racer game</p>
+</div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script>
+        // JavaScript to add fade-in class when elements are in view
+        const elements = document.querySelectorAll('.fade-in');
+
+        const fadeInElements = () => {
+            elements.forEach((element) => {
+                if (isElementInViewport(element)) {
+                    element.classList.add('active');
+                }
+            });
+        };
+
+        const isElementInViewport = (el) => {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        };
+
+        window.addEventListener('scroll', fadeInElements);
+        window.addEventListener('load', fadeInElements);
+    </script>
+</body>
+</html>
