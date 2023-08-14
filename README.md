@@ -1,1 +1,1 @@
-[vainer.dev]
+[vainer.dev](vainer.dev)
