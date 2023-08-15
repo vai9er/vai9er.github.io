@@ -59,15 +59,24 @@
         .floating-card:hover {
             transform: translateY(-5px);
         }
+        
+        .red-underline {
+            text-decoration: none;
+            border-bottom: 1px solid red;
+        }
 
+        .red-underline:hover {
+            border-bottom: 2px solid red;
+        }
     </style>
 </head>
 <body>
     <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="./index.html" class="nav-link " aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="./academia.html" class="nav-link">Academia</a></li>
-            <li class="nav-item"><a href="./projects.html" class="nav-link active">Projects</a></li>
+            <li class="nav-item floating-card"><a href="./index.html" class="nav-link " aria-current="page">Home</a></li>
+            <li class="nav-item floating-card"><a href="./music.html" class="nav-link active">Music</a></li>
+            <li class="nav-item floating-card"><a href="./academia.html" class="nav-link">Academia</a></li>
+            <li class="nav-item floating-card"><a href="./projects.html" class="nav-link">Projects</a></li>
         </ul>
     </header>
 
@@ -76,7 +85,7 @@
     
         <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 fade-in">
             <div class="col">
-                <a href="YOUR_YOUTUBE_VIDEO_LINK_HERE" target="_blank" class="card-link">
+                <a href="https://www.youtube.com/playlist?list=PLTMhVdwSbLJJqsZapqs7S-pJmKaEySkPN" target="_blank" class="card-link red-underline">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg floating-card" style="background-image: url('./pics/darken.png');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
                             <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold ayo">Gabriel <br> Vainer<br>Quartet</h3>
@@ -87,6 +96,7 @@
                     </div>
                 </a>
             </div>
+            
             
     
         </div>
