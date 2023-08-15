@@ -60,6 +60,14 @@
         .nav-pills .nav-link.active{
             background-color: #88c0d0;
         }
+
+        .floating-card {
+            transition: transform .5s ease-in-out;
+        }
+
+        .floating-card:hover {
+            transform: translateY(-5px);
+        }
         
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
@@ -69,9 +77,9 @@
     
     <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
-          <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
-          <li class="nav-item"><a href="./academia.html" class="nav-link">Academia</a></li>
-          <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item floating-card"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item floating-card"><a href="./academia.html" class="nav-link">Academia</a></li>
+          <li class="nav-item floating-card"><a href="./projects.html" class="nav-link">Projects</a></li>
         </ul>
       </header>
       
@@ -84,11 +92,11 @@
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4 fade-in nord-fg" style="margin-top: 20px;">Fourth Year Computer Science Student and Teaching Assistant at the University of Toronto with 3+ years of relevant work experience. My passions are in Embedded Systems, Operating Systems, and Biotechnology. I also specialize in Full-Stack development as well as building and maintaining large-scale system applications.</p>
                 <div class="d-flex justify-content-center">
-                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg" href="https://www.linkedin.com/in/gabe-v/"><i class="fab fa-linkedin"></i></a>
-                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg" href="https://github.com/vai9er"><i class="fab fa-github"></i></a>
-                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg" href="mailto:vai9er@gmail.com"><i class="fas fa-envelope"></i></a>                    
-                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg" href="./VainerResume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
-                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg" href="https://www.youtube.com/channel/UCL_UAAup1W8rh7WWcsKna9A">
+                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="https://www.linkedin.com/in/gabe-v/"><i class="fab fa-linkedin"></i></a>
+                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg  floating-card" href="https://github.com/vai9er"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="mailto:vai9er@gmail.com"><i class="fas fa-envelope"></i></a>                    
+                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="./VainerResume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
+                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="https://www.youtube.com/channel/UCL_UAAup1W8rh7WWcsKna9A">
                         <i class="bi bi-youtube nord-fg"></i>
                     </a>
                     

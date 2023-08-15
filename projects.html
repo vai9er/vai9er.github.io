@@ -45,6 +45,15 @@
         .proj{
             color: #8fbcbb;
         }
+
+        .floating-card {
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .floating-card:hover {
+            transform: translateY(-5px);
+        }
+
     </style>
 </head>
 <body>
@@ -59,7 +68,7 @@
     <div class="container px-4 py-5" id="featured-3">
         <h2 class="pb-2 border-bottom">Projects</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="feature col fade-in">
+            <div class="feature col fade-in floating-card">
                 <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                     <img src="./pics/Picture1.png" width="40em" height="40em" alt="Foo Icon">
                 </div>
@@ -69,7 +78,7 @@
                     navigation</p>
             </div>
 
-            <div class="feature col fade-in">
+            <div class="feature col fade-in floating-card">
                 <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
                     <img src="./pics/dechess.png" width="40em" height="40em" alt="Foo Icon">
                 </div>
@@ -79,7 +88,7 @@
             </div>
 
             <!-- Repeat the above structure for other project features -->
-            <div class="feature col fade-in">
+            <div class="feature col fade-in floating-card">
     <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
         <img src="./pics/promedioo.png" width="40em" height="40em" alt="Foo Icon">
     </div>
@@ -88,7 +97,7 @@
         from 4 minutes to 2 seconds</p>
 </div>
 
-<div class="feature col fade-in">
+<div class="feature col fade-in floating-card">
     <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
         <img src="./pics/tux.png" width="40em" height="40em" alt="Foo Icon">
     </div>
@@ -97,7 +106,7 @@
         user and system usage</p>
 </div>
 
-<div class="feature col fade-in">
+<div class="feature col fade-in floating-card">
     <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
         <img src="./pics/calender.png" width="40em" height="40em" alt="Foo Icon">
     </div>
@@ -106,7 +115,7 @@
         schedule appointments, and doctors can track their patients and specify their availabilities for patients to book</p>
 </div>
 
-<div class="feature col fade-in">
+<div class="feature col fade-in floating-card">
     <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3">
         <img src="./pics/joystick.png" width="40em" height="40em" alt="Foo Icon">
     </div>
