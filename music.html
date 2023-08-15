@@ -155,6 +155,11 @@
 
         window.addEventListener('scroll', fadeInElements);
         window.addEventListener('load', fadeInElements);
+
+        document.addEventListener('DOMContentLoaded', () => {
+        const h7Element = document.querySelector('.bruh');
+        h7Element.classList.add('active');
+    });
     </script>
 </body>
 </html>
