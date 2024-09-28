@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -14,6 +13,13 @@
         body {
             background-color: #2E3440; /* Background color */
             color: #ECEFF4; /* Text color */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            text-align: center; /* Ensures text is centered */
+            padding-top: 80px; /* Ensure content is below the navbar */
         }
 
         /* Nord theme colors */
@@ -34,6 +40,15 @@
             padding: 1rem 0; /* Adjust padding to increase navbar height */
         }
 
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2E3440; /* Matches the background color */
+            z-index: 1000; /* Ensures the navbar is on top of other content */
+        }
+
         /* Fade-in animation for the p element */
         .fade-in {
             animation: fadeInAnimation 3.75s ease-in-out forwards;
@@ -49,15 +64,15 @@
             }
         }
 
-        span{
+        span {
             color: #81A1C1;
         }
 
-        .nav-pills .nav-link{
+        .nav-pills .nav-link {
             color: #5e81ac;
         }
 
-        .nav-pills .nav-link.active{
+        .nav-pills .nav-link.active {
             background-color: #88c0d0;
         }
 
@@ -68,16 +83,30 @@
         .floating-card:hover {
             transform: translateY(-5px);
         }
-        
-        .lato-font{
+
+        .lato-font {
             font-family: 'Lato', sans-serif;
+        }
+
+        /* Fix height for typing animation container */
+        #typing-container {
+            height: 60px; /* Adjust the height as needed */
+            display: flex;
+            align-items: center; /* Center text vertically within the height */
+            justify-content: center; /* Center text horizontally */
+        }
+
+        .content-wrapper {
+            width: 100%;
+            max-width: 800px; /* Optional: to limit the width of content */
+            margin: auto;
         }
     </style>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 </head>
 <body>
-    
+
     <header class="d-flex justify-content-center py-3">
         <ul class="nav nav-pills">
             <li class="nav-item floating-card"><a href="./index.html" class="nav-link active" aria-current="page">Home</a></li>
@@ -85,30 +114,28 @@
             <li class="nav-item floating-card"><a href="./academia.html" class="nav-link">Academia</a></li>
             <li class="nav-item floating-card"><a href="./projects.html" class="nav-link">Projects</a></li>
         </ul>
-      </header>
-      
-    <div class="d-flex align-items-center justify-content-center min-vh-100">
-        <div class="px-4 py-5 my-5 text-center nord-bg">
-            
+    </header>
+
+    <div class="content-wrapper">
+        <div class="px-4 py-5 text-center nord-bg">
             <h1 class="display-5 fw-bold text-body-emphasis nord-fg">
-                <span id="typing-container"></span>
+                <div class="nord-accent" id="typing-container"></div>
             </h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4 fade-in nord-fg" style="margin-top: 20px;">Software Engineer. Jazz Musician.</p>
                 <div class="d-flex justify-content-center">
                     <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="https://www.linkedin.com/in/gabe-v/"><i class="fab fa-linkedin"></i></a>
-                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg  floating-card" href="https://github.com/vai9er"><i class="fab fa-github"></i></a>
+                    <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="https://github.com/vai9er"><i class="fab fa-github"></i></a>
                     <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="mailto:vai9er@gmail.com"><i class="fas fa-envelope"></i></a>                    
                     <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="./VainerResume.pdf" target="_blank"><i class="fas fa-file-pdf"></i></a>
                     <a class="btn btn-lg px-4 gap-3 nord-bg nord-fg floating-card" href="https://www.youtube.com/channel/UCL_UAAup1W8rh7WWcsKna9A">
                         <i class="bi bi-youtube nord-fg"></i>
                     </a>
-                    
                 </div>
             </div>
         </div>
     </div>
-    
+
     <script>
         const typed = new Typed('#typing-container', {
             strings: ["Gabriel Vainer"],
@@ -123,8 +150,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oUbe3DA4nI3rGCq6zJl3i0Rw63/M6BD2SSElqM+5HFO6JfaK5sU87x1uVMVCv1U2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-rWZIBkxxIhRTdE3/aCXJ3yPb8qcM7r5c9n9J1VnEuhbDf8jUcefwg6X2fF5Fp4V" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oUbe3DA4nI3rGCq6zJl3i0Rw63/M6BD2SSElqM+5HFO6JfaK5sU87x1uVMVCv1U2" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-rWZIBkxxIhRTdE3/aCXJ3yPb8qcM7r5c9n9J1VnEuhbDf8jUcefwg6X2fF5Fp4V" crossorigin="anonymous"></script>
-
 </body>
 </html>
